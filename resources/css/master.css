@@ -6,6 +6,7 @@ html {
 body {
   font-family: Helvetica, sans-serif;
   line-height: 1.4em;
+  margin: 0;
 }
 
 .container {
@@ -17,14 +18,29 @@ body {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
   color: white;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.callout {
+  float: right;
+  margin-top: 12rem;
+  padding: 1.5rem 5rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+
 }
 
 .top-bar {
+  background-color: cadetblue;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0rem;
 }
 
 .top-bar img {
@@ -35,16 +51,45 @@ body {
 }
 
 nav {
-  background-color: cadetblue;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 
 }
-
 nav span {
   font-weight: bold;
   margin: 1rem 2rem;
   flex: 1 1 auto;
+}
+
+/* Icon Area */
+.icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons figure {
+  width: 5rem;
+  margin: 3rem 2rem;
+  text-align: center;
+}
+.icons figure img {
+  width: 5rem;
+}
+
+.icons figure figcaption {
+  font-weight: bold;
+}
+
+footer {
+  background-color: azure;
+  color: black;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center ;
 }
