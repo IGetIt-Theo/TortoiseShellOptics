@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width: 1268px) {
+@media only screen and (min-width: 769px) {
     .container {
         max-width: 960px;
         margin: 0 auto;
@@ -105,8 +105,7 @@ body {
     }
 }
 
-
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
     .container {
         max-width: 960px;
         margin: 0 auto;
@@ -115,7 +114,7 @@ body {
         background-image: url("../images/glasses-bg.png");
         background-size: cover;
         color: white;
-        height: 30rem;
+        height: 22rem;
         padding: 0rem;
     }
     .callout {
@@ -126,7 +125,7 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 1.33rem;
-        background-color: blue;
+        background-color: white;
         color: black;
     }
     .top-bar {
@@ -202,30 +201,33 @@ body {
     }
 }
 
-
-
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 640px) {
     .container {
         max-width: 960px;
         margin: 0 auto;
+        width: 100%;
     }
     .main-container {
         background-image: url("../images/glasses-bg.png");
         background-size: cover;
         color: white;
-        height: 30rem;
-        padding: 1rem;
+        height: 17rem;
+
     }
     .callout {
-        float: right;
-        margin-top: 12rem;
-        padding: 1.5rem 5rem;
-        margin-left: 1rem;
+        width: 100%;
+        margin-top: 9rem;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1rem;
         background-color: white;
         color: black;
+        float: none;
+        text-align: center;
+        padding: 1rem 0px;
     }
     .top-bar {
         background-color: cadetblue;
@@ -241,10 +243,7 @@ body {
         flex: 1 1 auto;
     }
     nav {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
+        display: none
     }
     nav span {
         font-weight: bold;
@@ -254,31 +253,32 @@ body {
     /* Icon Area */
     .icons {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: space-around;
         align-items: center;
     }
     .icons figure {
-        width: 5rem;
-        margin: 3rem 2rem;
+        width: 80%;
+        margin: 1.54rem 2rem;
         text-align: center;
     }
     .icons figure img {
-        width: 5rem;
+        width: 50%;
     }
     .icons figure figcaption {
         font-weight: bold;
+        font-size: 0.77rem;
     }
     .descriptions {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
         justify-content: flex-start;
         align-items: flex-start;
         margin-top: 3rem;
         margin-bottom: 4rem;
     }
     .description {
-        width: 35%;
+        width: 85%;
         margin-left: 5%;
     }
     .desc-title {
